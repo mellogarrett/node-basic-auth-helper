@@ -3,11 +3,8 @@ module.exports = (vendor, auth) => {
   let password = getPassword(auth);
 
   if (username === process.env[`${vendor.toUpperCase()}_USERNAME`] && password === process.env[`${vendor.toUpperCase()}_PASSWORD`]) {
-    console.log(' [i] Request Authorized'); 
     return true;
   } else {
-    console.log(' [X] Request Not Authorized');
-    console.log(`username: ${username}, password: ${password}`);
     return false;
   }
 }
