@@ -1,7 +1,7 @@
 ## What is it?
 This is a helper function you can drop into your Node app to check Basic Authentication within a URL of a Request. 
 
-  *Please, if you are using Basic Authentication, use HTTPS to encrypt the credentials in the URL.*
+  *if you are using Basic Authentication, you should use HTTPS to encrypt the credentials in the URL.*
 
 ## How do I use this?
 This function assumes that you are going to store your usernames and passwords in a `.env` file, and that you are using a library that allows you to read from a `.env` file (I recommend the [dotenv](https://github.com/motdotla/dotenv) library).
