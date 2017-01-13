@@ -11,7 +11,7 @@ This function needs two variables passed in to check Authorization:
 * A 'vendor' which correlates to a username & password field in your .env file. 
 For example, if I pass in 'twitter' as the vendor, this function checks authorization against two environment variables: `TWITTER_USERNAME` & `TWITTER_PASSWORD`
 
-* An 'Auth' object, with is the request authorization header. You can access this on the req object with `req.headers['authorization']`
+* An 'Auth' object, which is the request authorization header. You can access this on the req object with `req.headers['authorization']`
 
 
 It returns **true** or **false** if the username and password match.
