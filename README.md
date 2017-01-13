@@ -3,8 +3,8 @@ This is a helper function you can drop into your Node app to check Basic Authent
 
   *if you are using Basic Authentication, you should use HTTPS to encrypt the credentials in the URL.*
 
-## How do I use this?
-This function assumes that you are going to store your usernames and passwords in a `.env` file, and that you are using a library that allows you to read from a `.env` file (I recommend the [dotenv](https://github.com/motdotla/dotenv) library).
+## How do I use it?
+This function assumes that you are going to store your usernames and passwords in a `.env` file, and that you are using a library that allows you to read from a `.env` file (I recommend the [dotenv](https://github.com/motdotla/dotenv) library). You could pretty easily modify to check against values stored elsewhere, like a database for example (I'll leave that up to you).
 
 This function needs two variables passed in to check Authorization:
 
