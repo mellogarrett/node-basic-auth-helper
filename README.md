@@ -17,12 +17,9 @@ For example, if I pass in 'twitter' as the vendor, this function checks authoriz
 It returns **true** or **false** if the username and password match.
 
 Example of use:
-
-    const isAuthorized = require('is-authorized');
-    
-    ...
-    
-    if ( isAuthorized('twitter', req.headers['authorization']) ) {
-      ...do something... 
-    }
+```js
+if ( isAuthorized('twitter', req.headers['authorization']) ) {
+  ...do something... 
+}
+```
 
